@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".EmployeeListActivity">
+
+    <item android:id="@+id/action_search"
+        android:title="Search"
+        android:icon="@android:drawable/ic_menu_search"
+        app:showAsAction="ifRoom" />
+
+    <item android:id="@+id/action_home"
+        android:title="Home"
+        android:icon="@android:drawable/ic_menu_revert"
+        app:showAsAction="ifRoom" />
+
+    <item android:id="@+id/action_login"
+        android:title ="Login"
+        android:icon="@drawable/ic_account_circle"
+        app:showAsAction="ifRoom"
+    />
+
+</menu>

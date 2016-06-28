@@ -1,0 +1,33 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".EmployeeListAfterLoginActivityActivity">
+
+    <item android:id="@+id/action_search"
+        android:title="Search"
+        android:icon="@android:drawable/ic_menu_search"
+        app:showAsAction="ifRoom" />
+
+    <item android:id="@+id/action_home"
+        android:title="Home"
+        android:icon="@android:drawable/ic_menu_revert"
+        app:showAsAction="ifRoom" />
+
+    <item android:id="@+id/action_profile"
+        android:title ="Profile"
+        android:icon="@drawable/ic_action_name"
+        app:showAsAction="ifRoom"
+        />
+
+    <item android:id="@+id/action_calendar"
+        android:title ="Events"
+        android:icon="@android:drawable/ic_menu_my_calendar"
+        app:showAsAction="ifRoom"
+        />
+
+    <item android:id="@+id/action_logout"
+        android:title ="Log Out"
+        android:icon="@drawable/ic_action_name2"
+        app:showAsAction="ifRoom"
+        />
+
+</menu>

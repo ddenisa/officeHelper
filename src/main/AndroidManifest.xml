@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="sk.upjs.ics.android.jot">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Office Helper"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".EmployeeListActivity"
+            android:label="Employee List">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".EmployeeDetailsActivity"
+            android:label="Employee Details"/>
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".EmployeeListAfterLoginActivity"
+            android:label="Employee List"/>
+        <activity android:name=".SignUPActivity" />
+        <activity android:name=".ProfileActivity"
+            android:label="My Profile"/>
+        <activity android:name=".EventActivity"></activity>
+
+        <provider
+            android:name=".provider.EmployeeContentProvider"
+            android:authorities="sk.upjs.ics.android.jot.provider.EmployeeContentProvider"
+            android:enabled="true"
+            android:exported="false"></provider>
+        <provider
+            android:name=".provider.LoginContentProvider"
+            android:authorities="sk.upjs.ics.android.jot.provider.LoginContentProvider"
+            android:enabled="true"
+            android:exported="false"></provider>
+        <provider
+            android:name=".provider.EventContentProvider"
+            android:authorities="sk.upjs.ics.android.jot.provider.EventContentProvider"
+            android:enabled="true"
+            android:exported="false"></provider>
+
+    </application>
+
+</manifest>
